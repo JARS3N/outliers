@@ -1,0 +1,18 @@
+Package: outliers
+Type: Package
+Title: outliers
+Version: 0.1.0
+Author: J.Arsenault
+Date: 2017-1004
+Maintainer: Who to complain to <JARS3N@GMAIL.COM>
+Description: store and launch scripts from seastar
+URL: https://github.com/JARS3N/
+Imports:
+    dplyr,
+    readxl,
+    tidyr,
+    ggplot2,
+    ggthemes
+License: none
+Encoding: UTF-8
+LazyData: true

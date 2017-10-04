@@ -1,0 +1,12 @@
+grab_many<-function(PATH=getwd()){
+  require(dplyr)
+  dplyr::bind_rows(
+    lapply(
+      grep(pattern="~",
+           x=list.files(pattern='.xlsx',
+                        path=PATH,
+                        full.names=TRUE),
+           invert=T,value=T),
+      grab)
+  )
+}
