@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: J.Arsenault
 Date: 2017-1004
 Maintainer: Who to complain to <JARS3N@GMAIL.COM>
-Description: store and launch scripts from seastar
+Description: munge outlier data etc
 URL: https://github.com/JARS3N/
 Imports:
     dplyr,
