@@ -8,7 +8,7 @@ munge_qc<-function(u=file.choose()){
                                       Meta["Cartridge Lot"]),
                          Instrument = Meta["Instrument Serial"],
                          fl = basename(u),
-                         platform=.Plat(Meta["Instrument Serial"]),
+                         platform=plat(Meta["Instrument Serial"]),
                          stringsAsFactors = FALSE)
   select(X$LVL, O2 = contains("O2 (mmHg)"), Well,
          WellTemp=`Well Temperature`) %>%
