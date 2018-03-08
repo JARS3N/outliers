@@ -2,7 +2,7 @@ plot_by_cartridge<-function(df,nameexp){
   require(ggplot2);
   require(ggthemes);
   nRuns<-(length(unique(df$fl)))
-  df$ctg<-paste0(df$Lot,"_",data$sn)
+  df$ctg<-paste0(df$Lot,"_",df$sn)
     ggplot(df,aes(grade)) +
     geom_bar(aes(fill=grade))+
     facet_wrap(~ctg)+
