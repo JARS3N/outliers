@@ -15,7 +15,7 @@ data<-do.call('rbind',
     data.frame(grade=y,n=nrow(x))
   },
   x=split(df,df$grade),
-  y=names(split(df,A$grade))
+  y=names(split(df,df$grade))
   )
 )
 data$peraverage<-round(n_table$n/(sum(n_table$n))*100,3)
