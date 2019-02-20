@@ -1,1 +1,1 @@
-grade_ox<-Vectorize(function(u){c("A","B","C","D")[c(u < 5,u >=5 & u <10,u >=10 & u <20,u >= 20)]})
+grade_ox<-Vectorize(function(u){(c("D","C","B","A")[u >=c(20,10,5,0)])[1]})
