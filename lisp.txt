@@ -1,0 +1,21 @@
+(defun HC (TC)
+(* 1000 (reduce '+ (mapcar '*
+(mapcar (lambda (u) (expt TC u)) '(3 2 1 0))
+'(-0.0000058333 0.0001821 0.072405 2.5443)
+))))
+;;;;;;
+;;;;;;
+(defun vp (TC)
+(reduce '+
+ (mapcar '*
+'(0.0456 -0.8559 16.509)
+(mapcar 'expt '(37 37 37) '(2 1 0)))))
+;;;;;;;
+;;;;;;;
+(defun DoO (TC vp ap)(
+(let coef (if (TC<30)(0.678)(0.827))
+(let adj (if (TC<30)(35)(49)))
+(/ (* (- ap vp) coef) (+ adj TC)) ))
+
+;;;;;
+(* (DO TC vp(TC) atm) 0.001 0.03125 0.018 (hc TC) atm)
