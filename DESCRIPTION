@@ -13,6 +13,8 @@ Imports:
     tidyr,
     ggplot2,
     ggthemes
+Remotes: 
+  Github::Jars3n/pp
 License: none
 Encoding: UTF-8
 LazyData: true
