@@ -1,7 +1,7 @@
 O2_outliers<-function(X){
 require(dplyr)
   O2 <-select(X$LVL,O2=mmHgO2,Well) %>%
-    mutate(.,mxO2=abs(O2-152))  %>%
+    mutate(.,mxO2=abs(O2-151.69))  %>%
     group_by(.,Well) %>%
     filter(.,mxO2==max(mxO2)) %>%
     slice(.,1) %>% 
